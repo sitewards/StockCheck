@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<sections>
+		<stockcheck_config translate="label comment" module="stockcheck">
+            <tab>catalog</tab>
+            <label>Sitewards Stock Check</label>
+            <frontend_type>text</frontend_type>
+            <sort_order>202</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+			<groups>
+				<stockcheck_group translate="label" module="stockcheck">
+					<label>Sitewards Stock Check</label>
+					<sort_order>1</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<disable_ext translate="label" module="stockcheck">
+							<label>Enable Sitewards Stock Check</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>1</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</disable_ext>
+						<product_identifier_name translate="label" module="stockcheck">
+							<label>Product Identifier</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>2</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment><![CDATA[Attribute on which to identify your products]]></comment>
+						</product_identifier_name>
+						<helper_name translate="label" module="stockcheck">
+							<label>Helper Name</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>3</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment><![CDATA[Allows you to specify a custom helper class outside of the pricecheck extension]]></comment>
+						</helper_name>
+					</fields>
+				</stockcheck_group>
+				<stockcheck_img translate="label" module="stockcheck">
+					<label>Sitewards Stock Check Images</label>
+					<sort_order>2</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<stock_green_text translate="label" module="stockcheck">
+							<label>Stock Green Text</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>1</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment><![CDATA[This is the alt text for the image]]></comment>
+						</stock_green_text>
+						<stock_green_hover translate="label" module="stockcheck">
+							<label>Stock Green Hover Text</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>2</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment><![CDATA[This is the text that will appear through a JavaScript pop up]]></comment>
+						</stock_green_hover>
+						<stock_green_img translate="label" module="stockcheck">
+							<label>Stock Green Image</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>3</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment><![CDATA[This is the path to the image e.g. /images/stock_green.gif]]></comment>
+						</stock_green_img>
+						<stock_yellow_text translate="label" module="stockcheck">
+							<label>Stock Yellow Text</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>4</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment><![CDATA[This is the alt text for the image]]></comment>
+						</stock_yellow_text>
+						<stock_yellow_hover translate="label" module="stockcheck">
+							<label>Stock Yellow Hover Text</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>5</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment><![CDATA[This is the text that will appear through a JavaScript pop up]]></comment>
+						</stock_yellow_hover>
+						<stock_yellow_img translate="label" module="stockcheck">
+							<label>Stock Yellow Image</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>6</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment><![CDATA[This is the path to the image e.g. /images/stock_yellow.gif]]></comment>
+						</stock_yellow_img>
+						<stock_red_text translate="label" module="stockcheck">
+							<label>Stock Red Text</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>7</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment><![CDATA[This is the alt text for the image]]></comment>
+						</stock_red_text>
+						<stock_red_hover translate="label" module="stockcheck">
+							<label>Stock Red Hover Text</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>8</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment><![CDATA[This is the text that will appear through a JavaScript pop up]]></comment>
+						</stock_red_hover>
+						<stock_red_img translate="label" module="stockcheck">
+							<label>Stock Red Image</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>9</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment><![CDATA[This is the path to the image e.g. /images/stock_red.gif]]></comment>
+						</stock_red_img>
+						<stock_off_text translate="label" module="stockcheck">
+							<label>Stock Off Text</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment><![CDATA[This is the alt text for the image]]></comment>
+						</stock_off_text>
+						<stock_off_hover translate="label" module="stockcheck">
+							<label>Stock Off Hover Text</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>11</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment><![CDATA[This is the text that will appear through a JavaScript pop up]]></comment>
+						</stock_off_hover>
+						<stock_off_img translate="label" module="stockcheck">
+							<label>Stock Off Image</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>8</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment><![CDATA[This is the path to the image e.g. /images/stock_off.gif]]></comment>
+						</stock_off_img>
+					</fields>
+				</stockcheck_img>
+			</groups>
+		</stockcheck_config>
+	</sections>
+</config>

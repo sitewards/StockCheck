@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Sitewards_StockCheck>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Mage_Checkout />
+				<Sitewards_B2BProfessional />
+			</depends>
+		</Sitewards_StockCheck>
+	</modules>
+</config>

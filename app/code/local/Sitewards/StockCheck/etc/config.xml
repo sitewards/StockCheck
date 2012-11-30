@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Sitewards_StockCheck>
+            <version>1.0.0</version>
+        </Sitewards_StockCheck>
+    </modules>
+
+	<default>
+		<stockcheck_config>
+			<stockcheck_group>
+				<product_identifier_name>entity_id</product_identifier_name>
+				<disable_ext>0</disable_ext>
+				<helper_name>stockcheck</helper_name>
+			</stockcheck_group>
+			<stockcheck_img>
+				<stock_green_id>1</stock_green_id>
+				<stock_green_text>Item is in stock.</stock_green_text>
+				<stock_green_hover>This item is in stock and ready to ship.</stock_green_hover>
+				<stock_green_img>/images/stock_green.gif</stock_green_img>
+				<stock_yellow_id>2</stock_yellow_id>
+				<stock_yellow_text>Item is on order.</stock_yellow_text>
+				<stock_yellow_hover>Item is currently out of stock, but has been ordered. There should be no delivery delays</stock_yellow_hover>
+				<stock_yellow_img>/images/stock_yellow.gif</stock_yellow_img>
+				<stock_red_id>3</stock_red_id>
+				<stock_red_text>Item is currently out of stock.</stock_red_text>
+				<stock_red_hover>This item is currently out of stock and is on backorder in 2-4 working days</stock_red_hover>
+				<stock_red_img>/images/stock_red.gif</stock_red_img>
+				<stock_off_id>4</stock_off_id>
+				<stock_off_text>Item is not a stock item.</stock_off_text>
+				<stock_off_hover>This article is not a stock item and will be replenished in about 2-4 days.</stock_off_hover>
+				<stock_off_img>/images/stock_off.gif</stock_off_img>
+			</stockcheck_img>
+		</stockcheck_config>
+	</default>
+
+	<frontend>
+		<routers>
+			<Sitewards_StockCheck>
+				<use>standard</use>
+				<args>
+					<module>Sitewards_StockCheck</module>
+					<frontName>StockCheck</frontName>
+				</args>
+			</Sitewards_StockCheck>
+			<checkout>
+                <args>
+                    <modules>
+						<Sitewards_StockCheck before="Mage_Checkout">Sitewards_StockCheck</Sitewards_StockCheck>
+					</modules>
+                </args>
+            </checkout>
+        </routers>
+    </frontend>
+
+    <global>
+        <models>
+            <catalog>
+                <rewrite>
+                    <product>Sitewards_StockCheck_Model_Product</product>
+                </rewrite>
+            </catalog>
+        </models>
+		<helpers>
+			<stockcheck>
+				<class>Sitewards_StockCheck_Helper</class>
+			</stockcheck>
+		</helpers>
+    </global>
+
+	<adminhtml>
+		<acl>
+			<resources>
+				<admin>
+					<children>
+						<catalog>
+							<children>
+								<stockcheck_adminform>
+									<title>Configuration</title>
+								</stockcheck_adminform>
+							</children>
+						</catalog>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+		<acl>
+			<resources>
+				<admin>
+					<children>
+						<system>
+							<children>
+								<config>
+									<children>
+										<stockcheck_config>
+											<title>Sitewards Stock Check</title>
+										</stockcheck_config>
+									</children>
+								</config>
+							</children>
+						</system>
+						<catalog>
+							<children>
+								<stockcheck_config translate="title">
+									<title>Sitewards Stock Check</title>
+									<sort_order>45</sort_order>
+								</stockcheck_config>
+							</children>
+						</catalog>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+	</adminhtml>
+</config>
