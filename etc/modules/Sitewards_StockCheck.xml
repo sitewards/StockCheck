@@ -5,8 +5,8 @@
 			<active>true</active>
 			<codePool>local</codePool>
 			<depends>
+				<Mage_Catalog />
 				<Mage_Checkout />
-				<Sitewards_B2BProfessional />
 			</depends>
 		</Sitewards_StockCheck>
 	</modules>

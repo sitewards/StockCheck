@@ -41,7 +41,7 @@ class Sitewards_StockCheck_Helper_Data extends Mage_Core_Helper_Abstract {
 	 * @return	int constant related to real time stock level
 	 */
 	public function getStorageType($mxdProductSku) {
-		Mage::throwException('StockCheck extension not correctly setup. Please complete the function getCustomQuantity in the helper '.get_class()); 
+		Mage::throwException('StockCheck extension not correctly setup. Please complete the function getStorageType in the helper '.get_class()); 
 	}
 
 	/**
