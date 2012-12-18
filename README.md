@@ -23,5 +23,5 @@ The following skeleton functions are provided in the Sitewards_StockCheck_Helper
 
 Please note that this is a framework and requires development to fit into Magento.
 
-author: David Manners, 12/2012
+author: Sitewards Development Team, 12/2012
 contact: http://www.sitewards.com
