@@ -1,2 +1,2 @@
-/app/code/local/Sitewards/StockCheck /app/code/local/Sitewards/StockCheck
-/etc/modules/Sitewards_StockCheck.xml /etc/modules/Sitewards_StockCheck.xml
+/app/code/community/Sitewards/StockCheck /app/code/community/Sitewards/StockCheck
+/app/etc/modules/Sitewards_StockCheck.xml /app/etc/modules/Sitewards_StockCheck.xml

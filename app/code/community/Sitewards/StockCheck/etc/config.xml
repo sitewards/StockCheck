@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ *
+ * @category    Sitewards
+ * @package     Sitewards_StockCheck
+ * @copyright   Copyright (c) 2013 Sitewards GmbH (http://www.sitewards.com/)
+ */
+-->
 <config>
     <modules>
         <Sitewards_StockCheck>
@@ -43,18 +51,14 @@
 					<frontName>StockCheck</frontName>
 				</args>
 			</Sitewards_StockCheck>
-			<checkout>
-                <args>
-                    <modules>
-						<Sitewards_StockCheck before="Mage_Checkout">Sitewards_StockCheck</Sitewards_StockCheck>
-					</modules>
-                </args>
-            </checkout>
         </routers>
     </frontend>
 
     <global>
         <models>
+			<stockcheck>
+				<class>Sitewards_StockCheck_Model</class>
+			</stockcheck>
             <catalog>
                 <rewrite>
                     <product>Sitewards_StockCheck_Model_Product</product>
@@ -66,7 +70,17 @@
 				<class>Sitewards_StockCheck_Helper</class>
 			</stockcheck>
 		</helpers>
-    </global>
+		<events>
+			<core_block_abstract_to_html_before>
+				<observers>
+					<stockcheck_cart>
+						<class>stockcheck/cart_observer</class>
+						<method>onCoreBlockAbstractToHtmlBefore</method>
+					</stockcheck_cart>
+				</observers>
+			</core_block_abstract_to_html_before>
+		</events>
+	</global>
 
 	<adminhtml>
 		<acl>
