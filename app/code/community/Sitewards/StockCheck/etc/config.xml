@@ -8,11 +8,11 @@
  */
 -->
 <config>
-    <modules>
-        <Sitewards_StockCheck>
-            <version>1.0.1</version>
-        </Sitewards_StockCheck>
-    </modules>
+	<modules>
+		<Sitewards_StockCheck>
+			<version>1.0.2</version>
+		</Sitewards_StockCheck>
+	</modules>
 
 	<default>
 		<stockcheck_config>
